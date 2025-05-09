@@ -22,19 +22,19 @@ let tempo = 50
 let atividade
 
 
-    switch (porte){
-        case 'Pequeno':
-            atividade = 'Brincar dentro de casa'
-            break
-        case 'Médio':
-            atividade = 'Caminhada no quarteirão'
-            break
-        case 'Grande':
-            atividade = 'Correr no parque'
-            break
-        default: //else
-            atividade = 'Porte Inválido'
-    }
+switch (porte){
+    case 'Pequeno':
+        atividade = 'Brincar dentro de casa'
+        break
+    case 'Médio':
+        atividade = 'Caminhada no quarteirão'
+        break
+    case 'Grande':
+        atividade = 'Correr no parque'
+        break
+    default: //else
+        atividade = 'Porte Inválido'
+}
 
 
 if(tempo < 15){
