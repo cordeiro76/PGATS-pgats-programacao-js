@@ -10,6 +10,6 @@ function verificarSeEstaSatisfeito(){
     }
     
         console.log(`Acabou o passeio!`)
-    }
+}
     
-    verificarSeEstaSatisfeito(10)
+verificarSeEstaSatisfeito(10)
