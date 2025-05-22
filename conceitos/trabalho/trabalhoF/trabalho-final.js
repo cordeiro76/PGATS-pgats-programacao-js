@@ -4,8 +4,8 @@ import {
   geradorDeTagsDeIdentificacao,
   verificarSePodeSerAdotado,
   calcularConsumoDeRacao,
-//   decidirTipoDeAtividadePorPorte,
-  //buscarDadoAsync
+  decidirTipoDeAtividadePorPorte,
+  buscarDadoAsync
 } from '../trabalho.js';
 
 describe('Testes da disciplina - fundamentos JS', () => {
@@ -22,13 +22,13 @@ describe('Testes da disciplina - fundamentos JS', () => {
     assert.strictEqual(calcularConsumoDeRacao('Pitoco', 1, 14.5), 4350)
   });
 
-//   it('QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada', () => {
-//     assert.strictEqual(decidirTipoDeAtividadePorPorte('pequeno'), 'brincar dentro de casa')
-//   });
+  it('QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada', () => {
+    assert.strictEqual(decidirTipoDeAtividadePorPorte('pequeno'), 'brincar dentro de casa')
+  });
 
-//   it('QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona', async () => {
-//     const resultado = await buscarDadoAsync();
-//     assert.strictEqual(resultado, 'Pipoca');
-//   });
+  it('QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona', async () => {
+    const resultado = await buscarDadoAsync();
+    assert.strictEqual(resultado, 'Pipoca');
+  });
 
 });
