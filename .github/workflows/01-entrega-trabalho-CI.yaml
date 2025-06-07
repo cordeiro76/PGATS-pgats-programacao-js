@@ -16,8 +16,14 @@ jobs:
         with:
           node-version: 22.x
 
+      - name: Instalando Yarn
+        run: npm install -g yarn
+
       - name: Instalando dependências
         run: yarn
+
+      - name: Instalando Mocha (caso necessário)
+        run: yarn add --dev mocha
 
       - name: Executando Testes E2E
         run: yarn run e2e
